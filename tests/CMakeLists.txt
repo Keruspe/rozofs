@@ -28,6 +28,7 @@ add_executable(test_transform
     ../src/transform.c
     test_transform.c
 )
+target_link_libraries(test_transform -lm)
 
 add_executable(rpc_throughput
     ../src/rpcclt.h
@@ -52,6 +53,7 @@ add_executable(transform_throughput
     ../src/transform.c
     transform_throughput.c
 )
+target_link_libraries(transform_throughput -lm)
 
 add_executable(transform_file
     ../src/xmalloc.h
@@ -60,6 +62,7 @@ add_executable(transform_file
     ../src/transform.c
     transform_file.c
 )
+target_link_libraries(transform_file -lm)
 
 add_executable(test_volume
     ../src/xmalloc.h
